@@ -89,11 +89,11 @@ pathwayTally %>%
 
 `r kable(pathwayTally %>% 
   arrange(desc(n)) %>% 
-  slice(1))`
+  slice(1), "markdown")`
 
 ## Save package data
 
 ```{r}
-usethis::use_data(pathwayDB)
+usethis::use_data(pathwayDB, overwrite = TRUE)
 ```
 

@@ -101,11 +101,24 @@ pathwayTally %>%
 
 
 
-DB                        Pathways                                                     n
-------------------------  -------------------------------------------------------  -----
-BioCarta_2016             MAPKinase Signaling Pathway Homo sapiens h mapkPathway      56
-KEGG_2019_Human           Pathways in cancer                                         530
-Reactome_2016             Signal Transduction Homo sapiens R-HSA-162582             2465
-WikiPathways_2019_Human   PI3K-Akt Signaling Pathway WP4172                          340
+|DB                      |Pathways                                               |    n|
+|:-----------------------|:------------------------------------------------------|----:|
+|BioCarta_2016           |MAPKinase Signaling Pathway Homo sapiens h mapkPathway |   56|
+|KEGG_2019_Human         |Pathways in cancer                                     |  530|
+|Reactome_2016           |Signal Transduction Homo sapiens R-HSA-162582          | 2465|
+|WikiPathways_2019_Human |PI3K-Akt Signaling Pathway WP4172                      |  340|
 
+
+
+## Save package data
+
+
+```r
+usethis::use_data(pathwayDB, overwrite = TRUE)
+```
+
+```
+## ✔ Setting active project to '/Users/asingh/Documents/omics-central-packages/r/omicsCentralDatasets'
+## ✔ Saving 'pathwayDB' to 'data/pathwayDB.rda'
+```
 
