@@ -85,8 +85,16 @@ pathwayTally %>%
 
 ```
 
+### Genesets with the most number of gene members (n)
+
 `r kable(pathwayTally %>% 
   arrange(desc(n)) %>% 
+  slice(1), "markdown")`
+  
+### Genesets with the least number of gene members (n)
+
+`r kable(pathwayTally %>% 
+  arrange(n) %>% 
   slice(1), "markdown")`
 
 ## Save package data
