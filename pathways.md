@@ -5,13 +5,11 @@ date: "December 3, 2016"
 output: 
   html_document: 
     keep_md: yes
-    toc: true
-    toc_depth: 5
 ---
 
 
 
-## Steps to reproduce pathways datasets (Genes symbols for each pathway database)
+## Steps to reproduce pathways datasets
 * downloaded from https://amp.pharm.mssm.edu/Enrichr/#stats on February 20, 2020 and converted them to .csv:
   - each row of the file is a pathway name followed by the gene symbols that belong to that pathway
   - applying read.delim() on the .txt files resulted in some issues (genes names going to the next line down)
@@ -48,8 +46,8 @@ pathwayDB <- lapply(databaseFiles, function(pathwayName){
 ```r
 pathwayDB %>% 
   dplyr::select(DB, Pathways) %>% 
-  group_by(DB, Pathways) %>% 
-  summarise(n = n()) %>% 
+  group_by(DB) %>% 
+  summarise(n = n_distinct(Pathways)) %>% 
   ggplot(aes(x = reorder(DB, -n), y = n)) +
   geom_bar(stat = "identity") +
   ylab("Number of pathways per DB") +
