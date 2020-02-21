@@ -9,6 +9,17 @@ devtools::install_github("singha53/omicsCentralDatasets")
 
 ## Asthma
 
+### How to use?
+
+```r
+library(omicsCentralDatasets);
+data(asthma)
+```
+
+### How to generate?
+
+[steps to reproduce asthma](https://github.com/singha53/omicsCentralDatasets/blob/master/dataCleaning/asthma/asthma.md)
+
 ## Pathway datasets
 
 ### How to use?
