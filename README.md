@@ -20,4 +20,4 @@ data(pathwayDB)
 
 ### How to generate?
 
-[steps to reproduce data](https://github.com/singha53/omicsCentralDatasets/blob/master/pathways.md)
+[steps to reproduce pathwayDB](https://github.com/singha53/omicsCentralDatasets/blob/master/dataCleaning/pathwayDB/pathways.md)
