@@ -20,5 +20,6 @@
 #'
 #'
 #' @examples
-#' data(omicsCentralDatasets)
+#' library(omicsCentralDatasets)
+#' data(pathwayDB)
 "pathwayDB"
