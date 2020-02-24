@@ -7,4 +7,4 @@ matrix:
   include:
   - r: devel
   - r: release
-  - r: 3.2
+  - r: 3.6
