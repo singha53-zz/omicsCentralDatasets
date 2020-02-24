@@ -4,7 +4,12 @@
 \name{pathwayDB}
 \alias{pathwayDB}
 \title{pathwayDB}
-\format{An object of class \code{"data.frame"};}
+\format{An object of class \code{"data.frame"};
+\describe{
+\item{Pathways}{Name of pathway/geneset}
+\item{Genes}{Gene symbol}
+\item{DB}{Name of database/annotation}
+}}
 \usage{
 data(pathwayDB)
 }
@@ -12,7 +17,8 @@ data(pathwayDB)
 Various pathway datasets (BioCarta, KEGG, Reactome, WikiPathways) download from Enrichr and converted to tidy data format.
 }
 \examples{
-data(omicsCentralDatasets)
+library(omicsCentralDatasets)
+data(pathwayDB)
 }
 \references{
 Chen EY et al. Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool. BMC Bioinformatics. 2013;128(14).
