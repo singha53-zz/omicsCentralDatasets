@@ -4,8 +4,4 @@
 .RData
 .Ruserdata
 .DS_Store
-README_files/
-README.html
-pathways.html
-dataCleaning/pathwayDB/data/
-dataCleaning/asthma/data/
+inst/extdata/
