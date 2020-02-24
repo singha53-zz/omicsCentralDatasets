@@ -4,8 +4,8 @@ Title: Houses datasets use to demonstrate functions in the omicsCentral set of p
 Version: 0.1.0
 Author: Amrit Singh
 Maintainer: Amrit Singh <asingh.analytics@gmail.com>
-Description: Contains heart failure and asthma datasets as well as pathways and drug databases
-License: MIT
+Description: Contains heart failure and asthma datasets as well as pathway and drug databases.
+License: GPL-3
 Depends:
     R (>= 3.6)
 Encoding: UTF-8
