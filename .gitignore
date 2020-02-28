@@ -4,6 +4,5 @@
 .RData
 .Ruserdata
 .DS_Store
-inst/extdata/dataCleaning/asthma/data/
-inst/extdata/dataCleaning/heartFailure/data/
-inst/extdata/dataCleaning/pathwayDB/data/
+inst/
+.Rhistory
