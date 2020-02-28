@@ -33,6 +33,9 @@ rownames(eset) <- as.character(eset0$genSym)
 demo$Subj <- sapply(strsplit(rownames(demo), "\\."), function(i){
   paste0(i[1], i[2], collapse = "")
 })
+## change time and response to factor
+demo$Time <- factor(demo$Time, c("pre", "post"))
+demo$Response <- factor(demo$Time, c("ER", "DR"))
 
 asthma <- list(demo = demo,
                cc = cells,
