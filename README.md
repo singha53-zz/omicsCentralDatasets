@@ -18,7 +18,7 @@ data(asthma)
 
 ### How to generate?
 
-[steps to reproduce asthma](https://github.com/singha53/omicsCentralDatasets/blob/master/dataCleaning/asthma/asthma.md)
+[steps to reproduce asthma](https://github.com/singha53/omicsCentralDatasets/blob/master/inst/extdata/dataCleaning/asthma/asthma.md)
 
 ## Pathway datasets
 
@@ -31,4 +31,4 @@ data(pathwayDB)
 
 ### How to generate?
 
-[steps to reproduce pathwayDB](https://github.com/singha53/omicsCentralDatasets/blob/master/dataCleaning/pathwayDB/pathways.md)
+[steps to reproduce pathwayDB](https://github.com/singha53/omicsCentralDatasets/blob/master/inst/extdata/dataCleaning/pathwayDB/pathways.md)
