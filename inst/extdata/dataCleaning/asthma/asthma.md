@@ -18,6 +18,11 @@ eset0 <- genDat[, -ncol(genDat)] %>%
 eset <- as.matrix(eset0[,-1])
 rownames(eset) <- as.character(eset0$genSym)
 
+## add subject to demo
+demo$Subj <- sapply(strsplit(rownames(demo), "\\."), function(i){
+  paste0(i[1], i[2], collapse = "")
+})
+
 asthma <- list(demo = demo,
                cc = cells,
                mrna = t(eset),
