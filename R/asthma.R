@@ -9,7 +9,7 @@
 #'
 #' @format An object of class \code{"list"};
 #' \describe{
-#' \item{demo}{28 samples x 2 phenotypic variables (time and response)}
+#' \item{demo}{28 samples x 3 phenotypic variables (time, response and subject)}
 #' \item{cc}{28 samples x 23 cell-types}
 #' \item{mrna}{28 samples x 5443 gene transcripts}
 #' \item{met}{28 samples x 292 metabolites}

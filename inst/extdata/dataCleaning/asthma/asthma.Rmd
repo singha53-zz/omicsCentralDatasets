@@ -35,7 +35,7 @@ demo$Subj <- sapply(strsplit(rownames(demo), "\\."), function(i){
 })
 ## change time and response to factor
 demo$Time <- factor(demo$Time, c("pre", "post"))
-demo$Response <- factor(demo$Time, c("ER", "DR"))
+demo$Response <- factor(demo$Response, c("ER", "DR"))
 
 asthma <- list(demo = demo,
                cc = cells,
